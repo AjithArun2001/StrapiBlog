@@ -6,11 +6,11 @@ function Blogs({search,choice}) {
 
     const [posts,setPosts] = useState([]);
 
-    const ApiUrl = 'http://localhost:1337'; 
+    const ApiUrl = 'https://gentle-mountain-91644.herokuapp.com'; 
 
 
     useEffect(()=>{
-        axios.get('http://localhost:1337/blogs').then(response => {
+        axios.get('https://gentle-mountain-91644.herokuapp.com/blogs').then(response => {
             setPosts(response.data);
         });
     })

@@ -9,7 +9,7 @@ function Navbar({search, setSearch, choice,setChoice}) {
 
 
     useEffect(()=>{
-        axios.get('http://localhost:1337/categories').then(response => {
+        axios.get('https://gentle-mountain-91644.herokuapp.com/categories').then(response => {
             setCategories(response.data);
         });
     })
